@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">DailyNews</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#world" class="hover:underline">World</a></li>
+          <li><a href="#tech" class="hover:underline">Technology</a></li>
+          <li><a href="#sports" class="hover:underline">Sports</a></li>
+          <li><a href="#entertainment" class="hover:underline">Entertainment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">Featured Article</h2>
+      <div class="flex flex-col md:flex-row gap-4">
+        <img src="https://source.unsplash.com/random/600x400?news" alt="Featured" class="w-full md:w-1/2 object-cover rounded">
+        <div>
+          <h3 class="text-xl font-semibold">Breaking News: Global Event</h3>
+          <p class="mt-2 text-gray-700">Stay informed with the latest updates on this breaking news happening globally.</p>
+          <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Categories -->
+  <section class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-4">Latest News</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Single Article -->
+      <article class="bg-white shadow-md rounded overflow-hidden">
+        <img src="https://source.unsplash.com/random/400x300?technology" alt="Tech News" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Tech Innovation in 2024</h3>
+          <p class="text-gray-700 mt-2">Discover the latest breakthroughs in technology shaping the future.</p>
+          <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+        </div>
+      </article>
+      <!-- Repeat similar blocks for other categories -->
+      <article class="bg-white shadow-md rounded overflow-hidden">
+        <img src="https://source.unsplash.com/random/400x300?sports" alt="Sports News" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Sports Highlights</h3>
+          <p class="text-gray-700 mt-2">Catch up with the latest updates and scores from the sports world.</p>
+          <a href="#" class="text-blue-600 hover:underline mt-4 block">Read More</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4">
+      <p class="text-center">&copy; 2024 DailyNews. All rights reserved.</p>
+      <div class="flex justify-center mt-4 space-x-4">
+        <a href="#" class="hover:underline">Contact Us</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
